@@ -1,0 +1,13 @@
+appId: com.example.rnstabstestid
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: "home screen"
+    timeout: 10000
+- assertVisible:
+    id: "tab-cards"
+- tapOn: "cards"
+- assertVisible: "cards screen"
+- assertVisible:
+    id: "tab-settings"
